@@ -4,30 +4,32 @@
              x:Class="IngresoPersonasBaseDatos.Views.AgregarPersona"
              BackgroundImageSource="fon.jpg">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+            <StackLayout>
             <Image Source="person.png"
                    HeightRequest="200"
                    WidthRequest="200"
                    HorizontalOptions="CenterAndExpand"
                    Aspect="Fill"/>
             <Entry x:Name="txtCode" IsVisible="false"></Entry>
-            <Label Text="NOMBRES" TextColor="Black"></Label>
-            <Entry x:Name="txtFirstnames" Placeholder="Ingrese Sus Nombres" TextColor="Black"></Entry>
+            <Label Text="NOMBRES" TextColor="Black" Margin="30,0,0,0"></Label>
+            <Entry x:Name="txtFirstnames" Placeholder="Ingrese Sus Nombres" Margin="10,0,10,0" TextColor="Black"></Entry>
 
-            <Label Text="APELLIDOS" TextColor="Black"></Label>
-            <Entry x:Name="txtLastnames" Placeholder="Ingrese Sus Apellidos" TextColor="Black"></Entry>
+            <Label Text="APELLIDOS" TextColor="Black" Margin="30,0,0,0"></Label>
+            <Entry x:Name="txtLastnames" Placeholder="Ingrese Sus Apellidos" Margin="10,0,10,0" TextColor="Black"></Entry>
 
-            <Label Text="EDAD" TextColor="Black"></Label>
-            <Entry x:Name="txtAge" Placeholder="Ingrese Su Edad" Keyboard="Numeric" MaxLength="3" TextColor="Black"></Entry>
+            <Label Text="EDAD" TextColor="Black" Margin="30,0,0,0"></Label>
+            <Entry x:Name="txtAge" Placeholder="Ingrese Su Edad" Margin="10,0,10,0" Keyboard="Numeric" MaxLength="3" TextColor="Black"></Entry>
 
-            <Label Text="DIRECCION" TextColor="Black"></Label>
-            <Entry x:Name="txtAddress" Placeholder="Ingrese Su Direccion" TextColor="Black"></Entry>
+            <Label Text="DIRECCION" TextColor="Black" Margin="30,0,0,0"></Label>
+            <Entry x:Name="txtAddress" Placeholder="Ingrese Su Direccion"  Margin="10,0,10,0" TextColor="Black"></Entry>
 
-            <Label Text="CORREO" TextColor="Black"></Label>
-            <Entry x:Name="txtEmail" Placeholder="Ingrese Su Correo" Keyboard="Email" TextColor="Black"></Entry>
+            <Label Text="CORREO" TextColor="Black" Margin="30,0,0,0"></Label>
+            <Entry x:Name="txtEmail" Placeholder="Ingrese Su Correo" Margin="10,0,10,0" Keyboard="Email" TextColor="Black"></Entry>
 
-            <Button x:Name="btnSavePerson" Text="SALVAR" Clicked="btnSavePerson_Clicked" TextColor="Black" BackgroundColor="White"></Button>
+            <Button x:Name="btnSavePerson" Text="SALVAR" Clicked="btnSavePerson_Clicked" TextColor="Black" BackgroundColor="White" Margin="15,0,15,0"></Button>
 
         </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>
