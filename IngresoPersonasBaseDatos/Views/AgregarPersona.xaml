@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IngresoPersonasBaseDatos.Views.AgregarPersona"
+             BackgroundImageSource="fon.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="person.png"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   HorizontalOptions="CenterAndExpand"
+                   Aspect="Fill"/>
+            <Entry x:Name="txtCode" IsVisible="false"></Entry>
+            <Label Text="NOMBRES" TextColor="Black"></Label>
+            <Entry x:Name="txtFirstnames" Placeholder="Ingrese Sus Nombres" TextColor="Black"></Entry>
+
+            <Label Text="APELLIDOS" TextColor="Black"></Label>
+            <Entry x:Name="txtLastnames" Placeholder="Ingrese Sus Apellidos" TextColor="Black"></Entry>
+
+            <Label Text="EDAD" TextColor="Black"></Label>
+            <Entry x:Name="txtAge" Placeholder="Ingrese Su Edad" Keyboard="Numeric" MaxLength="3" TextColor="Black"></Entry>
+
+            <Label Text="DIRECCION" TextColor="Black"></Label>
+            <Entry x:Name="txtAddress" Placeholder="Ingrese Su Direccion" TextColor="Black"></Entry>
+
+            <Label Text="CORREO" TextColor="Black"></Label>
+            <Entry x:Name="txtEmail" Placeholder="Ingrese Su Correo" Keyboard="Email" TextColor="Black"></Entry>
+
+            <Button x:Name="btnSavePerson" Text="SALVAR" Clicked="btnSavePerson_Clicked" TextColor="Black" BackgroundColor="White"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
